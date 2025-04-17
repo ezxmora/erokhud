@@ -1,0 +1,168 @@
+"Resource/UI/MvMScoreboard.res"
+{
+	"WaveStatusPanel"
+	{
+		"ControlName"		"CWaveStatusPanel"
+		"fieldName"			"WaveStatusPanel"
+		"xpos"				"c-300"
+		"ypos"				"c-130"
+		"zpos"				"0"
+		"wide"				"600"
+		"tall"				"67"
+		"visible"			"1"
+		"enabled"			"1"
+		"verbose"			"1"
+	}
+	"PopFileLabel"
+	{
+		"ControlName"		"CExLabel"
+		"fieldName"			"PopFileLabel"
+		"font"				"ehFontBold12"
+		"labelText"			"%popfile%"
+		"textAlignment"		"east"
+		"xpos"				"c10"
+		"ypos"				"r45"
+		"wide"				"265"
+		"tall"				"12"
+		"fgcolor"			"ehWhiteColor"
+	}
+	"DifficultyContainer"
+	{
+		"ControlName"		"EditablePanel"
+		"fieldName"			"DifficultyContainer"
+		"xpos"				"r223"
+		"ypos"				"r30"
+		"wide"				"70"
+		"tall"				"12"
+		"visible"			"1"
+		"DifficultyLabel"
+		{
+			"ControlName"		"CExLabel"
+			"fieldName"			"DifficultyLabel"
+			"ypos"				"r-9999"
+			"visible"			"0"
+			"enabled"			"0"
+		}
+		"DifficultyValue"
+		{
+			"ControlName"		"CExLabel"
+			"fieldName"			"DifficultyValue"
+			"font"				"ehFontBold12"
+			"labelText"			"%difficultyvalue%"
+			"textAlignment"		"east"
+			"xpos"				"0"
+			"ypos"				"0"
+			"wide"				"70"
+			"tall"				"12"
+			"fgcolor"			"ehWhiteColor"
+		}
+	}
+	"PlayerListBackground"
+	{
+		"ControlName"		"ScalableImagePanel"
+		"fieldName"			"PlayerListBackground"
+		"ypos"				"r-9999"
+		"visible"			"0"
+		"enabled"			"0"
+	}
+	"MvMPlayerList"
+	{
+		"ControlName"		"SectionedListPanel"
+		"fieldName"			"MvMPlayerList"
+		"xpos"				"c-280"
+		"ypos"				"c-60"
+		"wide"				"560"
+		"tall"				"150"
+		"visible"			"1"
+		"enabled"			"1"
+		"tabPosition"		"0"
+		"autoresize"		"3"
+		"linespacing"		"22"
+		"textcolor"			"ehWhiteColor"
+	}
+	"CreditStatsContainer"
+	{
+		"ControlName"		"EditablePanel"
+		"fieldName"			"CreditStatsContainer"
+		"xpos"				"c-280"
+		"ypos"				"300"
+		"wide"				"560"
+		"tall"				"105"
+		"visible"			"1"
+		"CreditStatsBackground"
+		{
+			"ControlName"		"ScalableImagePanel"
+			"fieldName"			"CreditStatsBackground"
+			"ypos"				"r-9999"
+			"visible"			"0"
+			"enabled"			"0"
+		}
+		"CreditsLabel"
+		{
+			"ControlName"		"CExLabel"
+			"fieldName"			"CreditsLabel"
+			"ypos"				"r-9999"
+			"visible"			"0"
+			"enabled"			"0"
+		}
+		"PreviousWaveCreditInfoPanel"
+		{
+			"ControlName"		"CCreditDisplayPanel"
+			"fieldName"			"PreviousWaveCreditInfoPanel"
+			"xpos"				"8"
+			"ypos"				"30"
+			"tall"				"60"
+			"wide"				"270"
+			"visible"			"1"
+		}
+		"PreviousWaveCreditSpendPanel"
+		{
+			"ControlName"				"CCreditSpendPanel"
+			"fieldName"					"PreviousWaveCreditSpendPanel"
+			"xpos"						"-130"
+			"ypos"						"0"
+			"tall"						"60"
+			"wide"						"130"
+			"visible"					"1"
+			"pin_to_sibling"			"PreviousWaveCreditInfoPanel"
+			"pin_corner_to_sibling"		"PIN_TOPLEFT"
+			"pin_to_sibling_corner"		"PIN_TOPRIGHT"
+		}
+		"TotalGameCreditInfoPanel"
+		{
+			"ControlName"		"CCreditDisplayPanel"
+			"fieldName"			"TotalGameCreditInfoPanel"
+			"xpos"				"280"
+			"ypos"				"30"
+			"tall"				"60"
+			"wide"				"270"
+			"visible"			"1"
+		}
+		"TotalGameCreditSpendPanel"
+		{
+			"ControlName"				"CCreditSpendPanel"
+			"fieldName"					"TotalGameCreditSpendPanel"
+			"xpos"						"-130"
+			"ypos"						"0"
+			"tall"						"60"
+			"wide"						"130"
+			"visible"					"1"
+			"pin_to_sibling"			"TotalGameCreditInfoPanel"
+			"pin_corner_to_sibling"		"PIN_TOPLEFT"
+			"pin_to_sibling_corner"		"PIN_TOPRIGHT"
+		}
+		"RespecStatusLabel"
+		{
+			"ControlName"		"CExLabel"
+			"fieldName"			"RespecStatusLabel"
+			"font"				"HudFontSmall"
+			"labelText"			"%respecstatus%"
+			"textAlignment"		"north-east"
+			"xpos"				"115"
+			"ypos"				"8"
+			"wide"				"275"
+			"tall"				"20"
+			"fgcolor"			"tanlight"
+		}
+	}
+}

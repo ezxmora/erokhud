@@ -1,0 +1,8 @@
+"UnlitGeneric"
+{
+    "$baseTexture"          "vgui/replay/thumbnails/panels/ehFlatColorPanel"
+    "$translucent"          "1"
+    "$color"                "{88 133 162 255}"
+    "$vertexcolor"          "1"
+    "$vertexalpha"          "0"
+}

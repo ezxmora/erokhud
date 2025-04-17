@@ -1,0 +1,37 @@
+"#base"		"confirmapply_base.res"
+"Resource/UI/ConfirmApplyStrangifierDialog.res"
+{
+	"ConfirmApplyStrangifierDialog"
+	{
+		"fieldName"					"ConfirmApplyStrangifierDialog"
+		"visible"					"1"
+		"enabled"					"1"
+		"xpos"						"c-200"
+		"ypos"						"c-200"
+		"wide"						"400"
+		"tall"						"240"
+		"bgcolor_override"			"46 43 42 0"
+		"paintbackgroundtype"		"0"
+		"settitlebarvisible"		"0"
+		"border"					"ehBorderBlackFlat"
+	}
+	"ConfirmLabel"
+	{
+		"ControlName"			"CExLabel"
+		"fieldName"				"ConfirmLabel"
+		"font"					"ehFontBold15"
+		"labelText"				"#ToolStrangifierConfirm"
+		"textAlignment"			"center"
+		"xpos"					"20"
+		"ypos"					"80"
+		"zpos"					"0"
+		"wide"					"360"
+		"tall"					"100"
+		"autoResize"			"1"
+		"pinCorner"				"0"
+		"visible"				"1"
+		"enabled"				"1"
+		"fgcolor_override"		"ehAccentColor"
+		"centerwrap"			"1"
+	}
+}

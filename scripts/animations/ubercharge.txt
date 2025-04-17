@@ -1,0 +1,46 @@
+event HudMedicCharged
+{
+	Animate		ChargeLabel 	fgcolor		ehAccentColor		Linear		0.0		0.3
+	Animate		ChargeLabel 	fgcolor		ehWhiteColor		Linear		0.3		0.4
+	
+	Animate		ChargeLabelBig 	fgcolor		ehAccentColor		Linear		0.0		0.3
+	Animate		ChargeLabelBig 	fgcolor		ehWhiteColor		Linear		0.3		0.4
+
+	Animate		ChargeMeter 	fgcolor		ehAccentColor		Linear		0.0		0.3
+	Animate		ChargeMeter 	fgcolor		ehWhiteColor		Linear		0.3		0.4
+
+	// Vaccinator, works kinda funny
+	Animate		ChargeMeter1 	fgcolor		ehAccentColor		Linear		0.0		0.3
+	Animate		ChargeMeter1 	fgcolor		ehWhiteColor		Linear		0.3		0.4
+
+	Animate		ChargeMeter2 	fgcolor		ehAccentColor		Linear		0.0		0.3
+	Animate		ChargeMeter2 	fgcolor		ehWhiteColor		Linear		0.3		0.4
+
+	Animate		ChargeMeter3 	fgcolor		ehAccentColor		Linear		0.0		0.3
+	Animate		ChargeMeter3 	fgcolor		ehWhiteColor		Linear		0.3		0.4
+
+	Animate		ChargeMeter4 	fgcolor		ehAccentColor		Linear		0.0		0.3
+	Animate		ChargeMeter4 	fgcolor		ehWhiteColor		Linear		0.3		0.4
+
+	RunEvent HudMedicChargedLoop	1
+}
+
+event HudMedicChargedLoop
+{
+	RunEvent		HudMedicCharged		0
+}
+
+event HudMedicChargedStop
+{
+	StopEvent		HudMedicCharged			0
+	StopEvent		HudMedicChargedLoop		0
+
+	Animate			ChargeLabel 		fgcolor		ehWhiteColor		Linear		0		0.0001
+	Animate			ChargeMeter 		fgcolor		ehAccentColor		Linear		0		0.0001
+	Animate			ChargeLabelBig 		fgcolor		ehWhiteColor		Linear		0		0.0001
+	
+	Animate			ChargeMeter1 		fgcolor		ehAccentColor		Linear		0		0.0001
+	Animate			ChargeMeter2 		fgcolor		ehAccentColor		Linear		0		0.0001
+	Animate			ChargeMeter3 		fgcolor		ehAccentColor		Linear		0		0.0001
+	Animate			ChargeMeter4 		fgcolor		ehAccentColor		Linear		0		0.0001
+}

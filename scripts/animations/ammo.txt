@@ -1,0 +1,26 @@
+event HudLowAmmoPulse
+{
+	Animate	AmmoInClip		fgcolor		ehRedColor		Linear 	0.0 	0.075
+	Animate	AmmoInClip		fgcolor		ehWhiteColor	Linear 	0.125 	0.075
+
+	Animate	AmmoInReserve	fgcolor		ehRedColor		Linear 	0.0 	0.075
+	Animate	AmmoInReserve	fgcolor		ehWhiteColor	Linear 	0.0 	0.075
+
+
+	Animate	AmmoNoClip		fgcolor		ehRedColor		Linear 	0.0 	0.075
+	Animate	AmmoNoClip		fgcolor		ehWhiteColor	Linear 	0.125 	0.075
+
+	RunEvent HudLowAmmoPulseLoop	0.40
+}
+
+event HudLowAmmoPulseStop
+{
+	StopEvent HudLowAmmoPulse 0.0
+	StopEvent HudLowAmmoPulseLoop 0.0
+
+	Animate	AmmoNoClip		fgcolor		ehWhiteColor	Linear 	0.0 	0.0
+	Animate	AmmoInReserve	fgcolor		ehWhiteColor	Linear 	0.0 	0.0
+	Animate	AmmoNoClip		fgcolor		ehWhiteColor	Linear 	0.0 	0.0
+
+
+}

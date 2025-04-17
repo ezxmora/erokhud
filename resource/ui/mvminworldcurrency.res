@@ -1,0 +1,75 @@
+"Resource/UI/MvMInWorldCurrency.res"
+{
+	"BorderBG"
+	{
+		"ControlName"		"EditablePanel"
+		"fieldName"			"BorderBG"
+		"ypos"				"r-9999"
+		"visible"			"0"
+		"enabled"			"0"
+	}
+	"BackgroundGood"
+	{
+		"ControlName"		"EditablePanel"
+		"fieldName"			"BackgroundGood"
+		"ypos"				"r-9999"
+		"visible"			"0"
+		"enabled"			"0"
+	}
+	"MoneyImagePanel"
+	{
+		"ControlName"		"ImagePanel"
+		"fieldName"			"MoneyImagePanel"
+		"ypos"				"r-9999"
+		"visible"			"0"
+		"enabled"			"0"
+	}
+	"CurrencyGood"
+	{
+		"ControlName"		"CExLabel"
+		"fieldName"			"CurrencyGood"
+		"font"				"ehFont12"
+		"fgcolor"			"ehPastelGreenColor"
+		"xpos"				"c-154"
+		"ypos"				"r25"
+		"zpos"				"4"
+		"wide"				"40"
+		"tall"				"12"
+		"visible"			"1"
+		"enabled"			"1"
+		"textAlignment"		"center"
+		"labelText"			"%currency%"
+	}
+	"CurrencyBad"
+	{
+		"ControlName"		"CExLabel"
+		"fieldName"			"CurrencyBad"
+		"font"				"ehFont12"
+		"fgcolor"			"ehWhiteColor"
+		"xpos"				"c-154"
+		"ypos"				"r25"
+		"zpos"				"4"
+		"wide"				"40"
+		"tall"				"12"
+		"visible"			"1"
+		"enabled"			"1"
+		"textAlignment"		"center"
+		"labelText"			"%currency%"
+	}
+	"CurrencyShadow"
+	{
+		"ControlName"		"CExLabel"
+		"fieldName"			"CurrencyShadow"
+		"font"				"ehFont12"
+		"fgcolor"			"ehBlackColor"
+		"xpos"				"c-153"
+		"ypos"				"r24"
+		"zpos"				"3"
+		"wide"				"40"
+		"tall"				"12"
+		"visible"			"1"
+		"enabled"			"1"
+		"textAlignment"		"center"
+		"labelText"			"%currency%"
+	}
+}

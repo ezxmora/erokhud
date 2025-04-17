@@ -1,0 +1,48 @@
+// Disables chat repositioning
+event CompetitiveGame_LowerChatWindow
+{
+}
+
+event CompetitiveGame_RestoreChatWindow
+{
+}
+
+// Hitmarker
+event HitMarker
+{
+	Animate	Hitmarker	Alpha	"200"	Linear 0.0 0.0
+	Animate	Hitmarker	Alpha	"0"		Linear 0.0 0.40
+}
+
+// Damage Account
+event DamageAccount
+{
+	Animate	DamageAccountValue	Alpha		"255"			Linear	0	0
+	Animate DamageAccountValueShadow Alpha 	"255"			Linear  0   0
+	Animate	DamageAccountValue	Position	"c-130 c95"		Linear	0	0
+	Animate	DamageAccountValue	Position	"c-130 c90"		Deaccel	0	.1
+	Animate	DamageAccountValue	Alpha		"0"				Deaccel	.8	.2
+	Animate	DamageAccountValueShadow	Alpha		"0"				Deaccel	.8	.2
+}
+
+event DamagedPlayer
+{
+	StopEvent 	HitMarker 	0.0
+	StopEvent	DamageAccount 0.0
+	
+	RunEvent 	HitMarker		0.01
+	RunEvent	DamageAccount	0
+}
+
+// Tournament panel positioning
+event HudTournamentSetupPanelOpen
+{
+	Animate HudTournamentSetup	Position	"c-90 -100"	Linear 0.0 0.001
+	Animate HudTournamentSetup	Position	"c-90 100"	Spline 0.001 0.2
+}
+
+event HudTournamentSetupPanelClose
+{
+	Animate HudTournamentSetup	Position	"c-90 100"	Linear 0.0 0.001
+	Animate HudTournamentSetup	Position	"c-90 -100"	Spline 0.001 0.2
+}

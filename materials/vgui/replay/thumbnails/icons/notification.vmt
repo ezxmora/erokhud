@@ -1,0 +1,5 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "vgui/replay/thumbnails/icons/notification"
+	"$translucent" 1
+}

@@ -1,0 +1,163 @@
+"Resource/UI/HudMedicCharge.res"
+{
+	"Background"
+	{
+		"xpos"			"0"
+		"visible"		"0"
+		"enabled"		"0"
+	}
+	"ChargeLabel"
+	{
+		"ControlName"			"CExLabel"
+		"fieldName"				"ChargeLabel"
+		"xpos"					"c-45"
+		"ypos"					"c10"
+		"zpos"					"2"
+		"wide"					"90"
+		"tall"					"15"
+		"labelText"				"#TF_UberchargeMinHUD"
+		"textAlignment"			"center"
+		"font"					"ehFont10"
+		"fgcolor_override"		"ehWhiteColor"
+	}
+	"ChargeLabelBig"
+	{
+		"ControlName"			"CExLabel"
+		"fieldName"				"ChargeLabelBig"
+		"xpos"					"c75"
+		"ypos"					"c100"
+		"zpos"					"2"
+		"wide"					"150"
+		"tall"					"50"
+		"labelText"				"#TF_UberchargeMinHUD"
+		"textAlignment"			"center"
+		"font"					"ehFontScalableBig"
+		"fgcolor_override"		"ehWhiteColor"
+	}
+	"ChargeLabelBigAccent"
+	{
+		"ControlName"			"CExLabel"
+		"fieldName"				"ChargeLabelBigAccent"
+		"xpos"					"-1"
+		"ypos"					"-1"
+		"zpos"					"1"
+		"wide"					"150"
+		"tall"					"50"
+		"labelText"				"#TF_UberchargeMinHUD"
+		"textAlignment"			"center"
+		"font"					"ehFontScalableBigBlur"
+		"fgcolor_override"		"ehAccentColor"
+		"pin_to_sibling"		"ChargeLabelBig"
+	}
+	"IndividualChargesLabel"
+	{
+		"ControlName"			"CExLabel"
+		"fieldName"				"IndividualChargesLabel"
+		"xpos"					"c-45"
+		"ypos"					"c10"
+		"zpos"					"2"
+		"wide"					"90"
+		"tall"					"15"
+		"labelText"				"#TF_IndividualUberchargesMinHUD"
+		"textAlignment"			"center"
+		"font"					"ehFont10"
+		"fgcolor_override"		"ehWhiteColor"
+	}
+	"ChargeMeter"
+	{
+		"ControlName"			"ContinuousProgressBar"
+		"fieldName"				"ChargeMeter"
+		"xpos"					"0"
+		"ypos"					"r6"
+		"wide"					"f0"
+		"tall"					"6"
+		"autoResize"			"0"
+		"pinCorner"				"0"
+		"visible"				"1"
+		"enabled"				"1"
+		"textAlignment"			"center"
+		"fgcolor_override"		"ehAccentColor"
+	}
+	"ChargeMeter1"
+	{
+		"ControlName"			"ContinuousProgressBar"
+		"fieldName"				"ChargeMeter1"
+		"xpos"					"0"
+		"ypos"					"r7"
+		"zpos"					"2"
+		"wide"					"p.24"
+		"tall"					"6"
+		"pinCorner"				"0"
+
+		"textAlignment"			"center"
+		"fgcolor_override"		"ehAccentColor"
+	}
+	"ChargeMeter2"
+	{
+		"ControlName"			"ContinuousProgressBar"
+		"fieldName"				"ChargeMeter2"
+		"xpos"					"p.25"
+		"ypos"					"r7"
+		"zpos"					"2"
+		"wide"					"p.24"
+		"tall"					"6"
+		"pinCorner"				"0"
+
+		"textAlignment"			"center"
+		"fgcolor_override"		"ehAccentColor"
+	}
+	"ChargeMeter3"
+	{
+		"ControlName"			"ContinuousProgressBar"
+		"fieldName"				"ChargeMeter3"
+		"xpos"					"p.51"
+		"ypos"					"r7"
+		"zpos"					"2"
+		"wide"					"p.24"
+		"tall"					"6"
+		"pinCorner"				"0"
+
+		"textAlignment"			"center"
+		"fgcolor_override"		"ehAccentColor"
+	}
+	"ChargeMeter4"
+	{
+		"ControlName"			"ContinuousProgressBar"
+		"fieldName"				"ChargeMeter4"
+		"xpos"					"p.76"
+		"ypos"					"r7"
+		"zpos"					"2"
+		"wide"					"p.24"
+		"tall"					"6"
+		"pinCorner"				"0"
+		"textAlignment"			"center"
+		"fgcolor_override"		"ehAccentColor"
+	}
+	"HealthClusterIcon"
+	{
+		"ypos"			"0"
+		"visible"		"0"
+		"enabled"		"0"
+	}
+	"ResistIconParent"
+	{
+		"ControlName"			"Label"
+		"fieldName"				"ResistIconParent"
+		"xpos"					"c-15"
+		"ypos"					"r136"
+		"zpos"					"0"
+		"wide"					"2"
+		"tall"					"0"
+		"visible"				"1"
+		"enabled"				"1"
+		"bgcolor_override"		"0 0 0 0"
+	}
+	"ResistIcon"
+	{
+		"pin_to_sibling"			"ResistIconParent"
+		"pin_corner_to_sibling"		"PIN_TOPLEFT"
+		"pin_to_sibling_corner"		"0"
+		"wide"						"24"
+		"tall"						"24"
+	}
+}

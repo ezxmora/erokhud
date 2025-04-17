@@ -1,0 +1,31 @@
+event HudHealthBonusPulse
+{
+	Animate	PlayerStatusHealthBonusImage 	Alpha		"255"		Linear 0.0 0.2
+	Animate	PlayerStatusHealthBonusImage 	Alpha		"0"			Linear 0.2 0.4
+
+	Animate HealthValue	 fgcolor	ehAccentColor	Linear	0.0 0.2
+	Animate HealthValue	 fgcolor	ehWhiteColor	Linear  0.2 0.4
+
+	RunEvent HudHealthBonusPulseLoop	0.5
+}
+
+event HudHealthBonusPulseStop
+{
+	Animate HealthValue	 fgcolor	ehWhiteColor	Linear  0 0.2
+	StopEvent HudHealthBonusPulse 0.2
+	StopEvent HudHealthBonusPulseLoop 0.2
+}
+
+event HudHealthDyingPulse
+{
+	Animate	PlayerStatusHealthBonusImage 	Alpha		"255"		Linear 0.0 0.075
+	Animate	PlayerStatusHealthBonusImage 	Alpha		"0"			Linear 0.125 0.075
+	
+	RunEvent HudHealthDyingPulseLoop	0.25
+}
+
+event HudHealthDyingPulseStop
+{
+	StopEvent HudHealthDyingPulse 0.0
+	StopEvent HudHealthDyingPulseLoop 0.0
+}

@@ -1,0 +1,8 @@
+
+exec autoexec.cfg
+
+// Dev mode
+vgui_cache_res_files 0; vgui_drawtree 1
+
+exec erokConVars.cfg
+ehRemoveDimmer
